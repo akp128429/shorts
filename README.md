@@ -6,8 +6,10 @@ A responsive, browser based short video editor prototype for creating vertical I
 
 - Import a YouTube link for video identification and thumbnail preview. YouTube links cannot be downloaded or processed by this prototype; upload the source file you have permission to edit.
 - Upload a local MP4, MOV, or WebM video; the source stays in the browser.
-- Preview, choose vertical or square output, adjust crop, set a short length, add cut markers, and overlay a simple title caption.
-- Export the edited result to a downloadable WebM file in the browser.
+- Choose vertical or square output, use fit-with-blurred-background or fill-and-crop, set a start point and clip length, and adjust playback speed.
+- Select a color look, caption text, caption style and placement, and original-audio toggle.
+- Add multiple shots from the source video and export them stitched in order; undo the last selected shot.
+- Export 1080p or 720p WebM in the browser.
 - Responsive editor layout for desktop and mobile.
 
 ## Run locally
@@ -16,4 +18,4 @@ Open `index.html` in a recent browser, or serve the repository root with any sta
 
 ## Current prototype limits
 
-This version does not extract or download videos from YouTube, generate speech to text captions, identify highlights automatically, or export MP4. Captions use the source filename as placeholder text. The available export is WebM and uses browser `MediaRecorder` and `canvas.captureStream()` support.
+This version does not extract or download videos from YouTube, generate speech-to-text captions, automatically identify highlights, mix in a separate soundtrack, or export MP4. The available export is WebM and uses browser `MediaRecorder` and `canvas.captureStream()` support.
